@@ -43,7 +43,6 @@ html, body {
     border-radius: 50%;
     box-shadow: inset -10px 10px 0 10px #cccccc;
     height: 200px;
-    text-align: center;
     overflow: hidden;
     position: relative;
     width: 200px;
@@ -71,7 +70,7 @@ html, body {
 }
 
 .pokeball-button {
-    background: #7f8c8d;
+    background: #dee1e3;
     border: 10px solid #fff;
     border-radius: 50%;
     box-shadow: 0 0 0 10px black;
@@ -139,7 +138,7 @@ html, body {
     width: 30px;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
+    /* border-radius: 50%; */
   }
 
   .fa:hover {
