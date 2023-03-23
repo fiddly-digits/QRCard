@@ -1,0 +1,38 @@
+html, body {
+    background: #d5e1ef;
+    height: 100%;
+    margin: 0px;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+/*primer parametro x segundo parametro y tercer parametro difuminado */
+
+.card-container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,.1); 
+    display: inline-block;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.card-container .qr-container {
+    background: #2f7dfa;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-container .qr-container img {
+    max-width: 100%;
+}
+
+.card-container h1 {
+    font-size: 22px;
+}
+
+.card-container p {
+    font-size: 10px;
+}
