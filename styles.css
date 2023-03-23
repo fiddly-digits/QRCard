@@ -25,32 +25,82 @@ html, body {
 /*primer parametro x segundo parametro y tercer parametro difuminado */
 
 .card-container {
-    background: #ffffff;
+    background: rgb(246, 207, 87);
     border-radius: 20px;
-    box-shadow: 0px 8px 20px rgba(0,0,0,.1); 
+    box-shadow: 0px 20px 30px rgba(0,0,0,.1); 
     display: inline-block;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     overflow: hidden;
-    width: 230px;
+    width: 220px;
 }
 
-.card-container .qr-container {
-    background: #2f7dfa;
-    border-radius: 10px;
-    padding: 20px;
+.card-container .pokeball {
+    background: #ffffff;
+    border: 10px solid #000;
+    border-radius: 50%;
+    box-shadow: inset -10px 10px 0 10px #cccccc;
+    height: 200px;
     text-align: center;
     overflow: hidden;
     position: relative;
+    width: 200px;
 }
 
-.card-container .qr-container img {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(38deg) brightness(104%) contrast(101%);
-    max-width: 70%;
+.card-container .pokeball::before,
+.card-container .pokeball::after {
+    content: "";
+    position: absolute;
 }
+
+.card-container .pokeball::before {
+    background: red;
+    height: 50%;
+    left: 0px;
+    width: 100%;
+}
+
+.card-container .pokeball::after {
+    background: #000;
+    height: 20px;
+    left: 0px;
+    top: calc(50% - 10px);
+    width: 100%;
+}
+
+.pokeball-button {
+    background: #7f8c8d;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px black;
+    height: 40px;
+    left: calc(50% - 30px);
+    position: absolute;
+    top: calc(50% - 30px);
+    width: 40px;
+    z-index: 10;
+  }
+
+  .pokeball-button:hover {
+    background: rgb(220,20,60);
+  }
+
+/* .card-container .qr-container img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(38deg) brightness(104%) contrast(101%);
+    max-width: 100%;
+} */
 
 .card-container h1 {
     font-family: rubik;
     font-size: 18px;
+    padding: 5px;
+}
+
+.card-container h2 {
+    font-family: rubik;
+    font-size: 15px;
     padding: 5px;
 }
 
@@ -61,7 +111,7 @@ html, body {
     padding: 5px;
 }
 
-.qr-container .semi-circle-up {
+/* .qr-container .semi-circle-up {
     background-color: #1584fa;
     bottom: 100px;
     border-radius: 160px 160px 0 0;
@@ -81,4 +131,17 @@ html, body {
     top: 190px;
     transform: rotate(270deg);
     width: 320px;
-}
+} */
+
+.fa {
+    color: red;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.8;
+  }
