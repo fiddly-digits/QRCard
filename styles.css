@@ -39,6 +39,8 @@ html, body {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .card-container .qr-container img {
@@ -57,4 +59,26 @@ html, body {
     font-family: rubik;
     font-size: 12px;
     padding: 5px;
+}
+
+.qr-container .semi-circle-up {
+    background-color: #1584fa;
+    bottom: 100px;
+    border-radius: 160px 160px 0 0;
+    height: 160px;
+    position: absolute;
+    right: 0px;
+    transform: rotate(120deg);
+    width: 320px;
+}
+
+.qr-container .semi-circle-down {
+    background-color: #1584fa;
+    border-radius: 160px 160px 0 0;
+    height: 160px;
+    left: 0px;
+    position: absolute;
+    top: 190px;
+    transform: rotate(270deg);
+    width: 320px;
 }
