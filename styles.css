@@ -29,9 +29,9 @@ html, body {
     border-radius: 20px;
     box-shadow: 0px 8px 20px rgba(0,0,0,.1); 
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     overflow: hidden;
-    width: 230px;
+    max-width: 230px; 
 }
 
 .card-container .qr-container {
